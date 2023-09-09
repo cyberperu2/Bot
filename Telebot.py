@@ -5,7 +5,7 @@ const bot = new TelegramBot('6338068936:AAHiZflXdNWM6vrWgu474SXhzxcKZ_ITDv0', {p
 
 bot.onText(/\/gettext/, (msg) => {
  const chatId = msg.chat.id;
- const githubPath = 'owner/repository/path/to/file.txt';
+ const githubPath = 'https://raw.githubusercontent.com/Paper890/izin/main/IP';
  fetch(`https://raw.githubusercontent.com/${githubPath}`)
    .then(response => response.text())
    .then(text => {
